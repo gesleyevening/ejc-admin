@@ -54,6 +54,7 @@
   <div class="field">
     <%= f.label :tipo_pessoa %>
     <%= f.text_field :tipo_pessoa %>
+    <%= f.collection_select(:tipo_pessoa, TipoPessoa.all, :id, :name) %>
   </div>
 
   <div class="actions">
